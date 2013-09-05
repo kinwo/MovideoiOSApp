@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA7A3DCC17D8A5CC00E86E60 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7A3DCB17D8A5CC00E86E60 /* UIKit.framework */; };
+		BA7A3DCE17D8A5CC00E86E60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7A3DCD17D8A5CC00E86E60 /* Foundation.framework */; };
+		BA7A3DD017D8A5CC00E86E60 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7A3DCF17D8A5CC00E86E60 /* CoreGraphics.framework */; };
+		BA7A3DD617D8A5CC00E86E60 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA7A3DD417D8A5CC00E86E60 /* InfoPlist.strings */; };
+		BA7A3DD817D8A5CC00E86E60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7A3DD717D8A5CC00E86E60 /* main.m */; };
+		BA7A3DDC17D8A5CC00E86E60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7A3DDB17D8A5CC00E86E60 /* AppDelegate.m */; };
+		BA7A3DDE17D8A5CC00E86E60 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BA7A3DDD17D8A5CC00E86E60 /* Default.png */; };
+		BA7A3DE017D8A5CC00E86E60 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA7A3DDF17D8A5CC00E86E60 /* Default@2x.png */; };
+		BA7A3DE217D8A5CC00E86E60 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA7A3DE117D8A5CC00E86E60 /* Default-568h@2x.png */; };
+		BA7A3DE517D8A5CC00E86E60 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA7A3DE317D8A5CC00E86E60 /* MainStoryboard_iPhone.storyboard */; };
+		BA7A3DE817D8A5CC00E86E60 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA7A3DE617D8A5CC00E86E60 /* MainStoryboard_iPad.storyboard */; };
+		BA7A3DEB17D8A5CC00E86E60 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7A3DEA17D8A5CC00E86E60 /* ViewController.m */; };
+		BA7A3DF317D8A5CC00E86E60 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7A3DF217D8A5CC00E86E60 /* SenTestingKit.framework */; };
+		BA7A3DF417D8A5CC00E86E60 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7A3DCB17D8A5CC00E86E60 /* UIKit.framework */; };
+		BA7A3DF517D8A5CC00E86E60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7A3DCD17D8A5CC00E86E60 /* Foundation.framework */; };
+		BA7A3DFD17D8A5CC00E86E60 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA7A3DFB17D8A5CC00E86E60 /* InfoPlist.strings */; };
+		BA7A3E0017D8A5CC00E86E60 /* MovideoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7A3DFF17D8A5CC00E86E60 /* MovideoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA7A3DF617D8A5CC00E86E60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA7A3DC017D8A5CC00E86E60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA7A3DC717D8A5CC00E86E60;
+			remoteInfo = Movideo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BA7A3DC817D8A5CC00E86E60 /* Movideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA7A3DCB17D8A5CC00E86E60 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BA7A3DCD17D8A5CC00E86E60 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BA7A3DCF17D8A5CC00E86E60 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BA7A3DD317D8A5CC00E86E60 /* Movideo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Movideo-Info.plist"; sourceTree = "<group>"; };
+		BA7A3DD517D8A5CC00E86E60 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BA7A3DD717D8A5CC00E86E60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BA7A3DD917D8A5CC00E86E60 /* Movideo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Movideo-Prefix.pch"; sourceTree = "<group>"; };
+		BA7A3DDA17D8A5CC00E86E60 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BA7A3DDB17D8A5CC00E86E60 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BA7A3DDD17D8A5CC00E86E60 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		BA7A3DDF17D8A5CC00E86E60 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		BA7A3DE117D8A5CC00E86E60 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BA7A3DE417D8A5CC00E86E60 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		BA7A3DE717D8A5CC00E86E60 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		BA7A3DE917D8A5CC00E86E60 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BA7A3DEA17D8A5CC00E86E60 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BA7A3DF117D8A5CC00E86E60 /* MovideoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovideoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA7A3DF217D8A5CC00E86E60 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		BA7A3DFA17D8A5CC00E86E60 /* MovideoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MovideoTests-Info.plist"; sourceTree = "<group>"; };
+		BA7A3DFC17D8A5CC00E86E60 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BA7A3DFE17D8A5CC00E86E60 /* MovideoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovideoTests.h; sourceTree = "<group>"; };
+		BA7A3DFF17D8A5CC00E86E60 /* MovideoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovideoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA7A3DC517D8A5CC00E86E60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA7A3DCC17D8A5CC00E86E60 /* UIKit.framework in Frameworks */,
+				BA7A3DCE17D8A5CC00E86E60 /* Foundation.framework in Frameworks */,
+				BA7A3DD017D8A5CC00E86E60 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA7A3DED17D8A5CC00E86E60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA7A3DF317D8A5CC00E86E60 /* SenTestingKit.framework in Frameworks */,
+				BA7A3DF417D8A5CC00E86E60 /* UIKit.framework in Frameworks */,
+				BA7A3DF517D8A5CC00E86E60 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA7A3DBF17D8A5CC00E86E60 = {
+			isa = PBXGroup;
+			children = (
+				BA7A3DD117D8A5CC00E86E60 /* Movideo */,
+				BA7A3DF817D8A5CC00E86E60 /* MovideoTests */,
+				BA7A3DCA17D8A5CC00E86E60 /* Frameworks */,
+				BA7A3DC917D8A5CC00E86E60 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA7A3DC917D8A5CC00E86E60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA7A3DC817D8A5CC00E86E60 /* Movideo.app */,
+				BA7A3DF117D8A5CC00E86E60 /* MovideoTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA7A3DCA17D8A5CC00E86E60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA7A3DCB17D8A5CC00E86E60 /* UIKit.framework */,
+				BA7A3DCD17D8A5CC00E86E60 /* Foundation.framework */,
+				BA7A3DCF17D8A5CC00E86E60 /* CoreGraphics.framework */,
+				BA7A3DF217D8A5CC00E86E60 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA7A3DD117D8A5CC00E86E60 /* Movideo */ = {
+			isa = PBXGroup;
+			children = (
+				BA7A3DDA17D8A5CC00E86E60 /* AppDelegate.h */,
+				BA7A3DDB17D8A5CC00E86E60 /* AppDelegate.m */,
+				BA7A3DE317D8A5CC00E86E60 /* MainStoryboard_iPhone.storyboard */,
+				BA7A3DE617D8A5CC00E86E60 /* MainStoryboard_iPad.storyboard */,
+				BA7A3DE917D8A5CC00E86E60 /* ViewController.h */,
+				BA7A3DEA17D8A5CC00E86E60 /* ViewController.m */,
+				BA7A3DD217D8A5CC00E86E60 /* Supporting Files */,
+			);
+			path = Movideo;
+			sourceTree = "<group>";
+		};
+		BA7A3DD217D8A5CC00E86E60 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA7A3DD317D8A5CC00E86E60 /* Movideo-Info.plist */,
+				BA7A3DD417D8A5CC00E86E60 /* InfoPlist.strings */,
+				BA7A3DD717D8A5CC00E86E60 /* main.m */,
+				BA7A3DD917D8A5CC00E86E60 /* Movideo-Prefix.pch */,
+				BA7A3DDD17D8A5CC00E86E60 /* Default.png */,
+				BA7A3DDF17D8A5CC00E86E60 /* Default@2x.png */,
+				BA7A3DE117D8A5CC00E86E60 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BA7A3DF817D8A5CC00E86E60 /* MovideoTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA7A3DFE17D8A5CC00E86E60 /* MovideoTests.h */,
+				BA7A3DFF17D8A5CC00E86E60 /* MovideoTests.m */,
+				BA7A3DF917D8A5CC00E86E60 /* Supporting Files */,
+			);
+			path = MovideoTests;
+			sourceTree = "<group>";
+		};
+		BA7A3DF917D8A5CC00E86E60 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA7A3DFA17D8A5CC00E86E60 /* MovideoTests-Info.plist */,
+				BA7A3DFB17D8A5CC00E86E60 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA7A3DC717D8A5CC00E86E60 /* Movideo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA7A3E0317D8A5CC00E86E60 /* Build configuration list for PBXNativeTarget "Movideo" */;
+			buildPhases = (
+				BA7A3DC417D8A5CC00E86E60 /* Sources */,
+				BA7A3DC517D8A5CC00E86E60 /* Frameworks */,
+				BA7A3DC617D8A5CC00E86E60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Movideo;
+			productName = Movideo;
+			productReference = BA7A3DC817D8A5CC00E86E60 /* Movideo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA7A3DF017D8A5CC00E86E60 /* MovideoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA7A3E0617D8A5CC00E86E60 /* Build configuration list for PBXNativeTarget "MovideoTests" */;
+			buildPhases = (
+				BA7A3DEC17D8A5CC00E86E60 /* Sources */,
+				BA7A3DED17D8A5CC00E86E60 /* Frameworks */,
+				BA7A3DEE17D8A5CC00E86E60 /* Resources */,
+				BA7A3DEF17D8A5CC00E86E60 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA7A3DF717D8A5CC00E86E60 /* PBXTargetDependency */,
+			);
+			name = MovideoTests;
+			productName = MovideoTests;
+			productReference = BA7A3DF117D8A5CC00E86E60 /* MovideoTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA7A3DC017D8A5CC00E86E60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "HENRY CHAN";
+			};
+			buildConfigurationList = BA7A3DC317D8A5CC00E86E60 /* Build configuration list for PBXProject "Movideo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BA7A3DBF17D8A5CC00E86E60;
+			productRefGroup = BA7A3DC917D8A5CC00E86E60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA7A3DC717D8A5CC00E86E60 /* Movideo */,
+				BA7A3DF017D8A5CC00E86E60 /* MovideoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA7A3DC617D8A5CC00E86E60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA7A3DD617D8A5CC00E86E60 /* InfoPlist.strings in Resources */,
+				BA7A3DDE17D8A5CC00E86E60 /* Default.png in Resources */,
+				BA7A3DE017D8A5CC00E86E60 /* Default@2x.png in Resources */,
+				BA7A3DE217D8A5CC00E86E60 /* Default-568h@2x.png in Resources */,
+				BA7A3DE517D8A5CC00E86E60 /* MainStoryboard_iPhone.storyboard in Resources */,
+				BA7A3DE817D8A5CC00E86E60 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA7A3DEE17D8A5CC00E86E60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA7A3DFD17D8A5CC00E86E60 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BA7A3DEF17D8A5CC00E86E60 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA7A3DC417D8A5CC00E86E60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA7A3DD817D8A5CC00E86E60 /* main.m in Sources */,
+				BA7A3DDC17D8A5CC00E86E60 /* AppDelegate.m in Sources */,
+				BA7A3DEB17D8A5CC00E86E60 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA7A3DEC17D8A5CC00E86E60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA7A3E0017D8A5CC00E86E60 /* MovideoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA7A3DF717D8A5CC00E86E60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA7A3DC717D8A5CC00E86E60 /* Movideo */;
+			targetProxy = BA7A3DF617D8A5CC00E86E60 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA7A3DD417D8A5CC00E86E60 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA7A3DD517D8A5CC00E86E60 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BA7A3DE317D8A5CC00E86E60 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA7A3DE417D8A5CC00E86E60 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		BA7A3DE617D8A5CC00E86E60 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA7A3DE717D8A5CC00E86E60 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		BA7A3DFB17D8A5CC00E86E60 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA7A3DFC17D8A5CC00E86E60 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA7A3E0117D8A5CC00E86E60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA7A3E0217D8A5CC00E86E60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA7A3E0417D8A5CC00E86E60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Movideo/Movideo-Prefix.pch";
+				INFOPLIST_FILE = "Movideo/Movideo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BA7A3E0517D8A5CC00E86E60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Movideo/Movideo-Prefix.pch";
+				INFOPLIST_FILE = "Movideo/Movideo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BA7A3E0717D8A5CC00E86E60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Movideo.app/Movideo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Movideo/Movideo-Prefix.pch";
+				INFOPLIST_FILE = "MovideoTests/MovideoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		BA7A3E0817D8A5CC00E86E60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Movideo.app/Movideo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Movideo/Movideo-Prefix.pch";
+				INFOPLIST_FILE = "MovideoTests/MovideoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA7A3DC317D8A5CC00E86E60 /* Build configuration list for PBXProject "Movideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA7A3E0117D8A5CC00E86E60 /* Debug */,
+				BA7A3E0217D8A5CC00E86E60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA7A3E0317D8A5CC00E86E60 /* Build configuration list for PBXNativeTarget "Movideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA7A3E0417D8A5CC00E86E60 /* Debug */,
+				BA7A3E0517D8A5CC00E86E60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BA7A3E0617D8A5CC00E86E60 /* Build configuration list for PBXNativeTarget "MovideoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA7A3E0717D8A5CC00E86E60 /* Debug */,
+				BA7A3E0817D8A5CC00E86E60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA7A3DC017D8A5CC00E86E60 /* Project object */;
+}
