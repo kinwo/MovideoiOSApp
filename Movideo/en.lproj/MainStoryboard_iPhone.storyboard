@@ -74,25 +74,6 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZBA-Tb-o8s">
-                                <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Movideo!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1F-nu-L3n">
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="21" id="E8T-hN-yN2"/>
-                                            <constraint firstAttribute="width" constant="91" id="dDK-8V-mAs"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Trebuchet-BoldItalic" family="Trebuchet MS" pointSize="17"/>
-                                        <color key="textColor" red="0.97254908084869385" green="0.78431379795074463" blue="0.18823531270027161" alpha="1" colorSpace="deviceRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.94509810209274292" green="0.3490196168422699" blue="0.29019609093666077" alpha="1" colorSpace="deviceRGB"/>
-                                <constraints>
-                                    <constraint firstItem="Z1F-nu-L3n" firstAttribute="centerY" secondItem="ZBA-Tb-o8s" secondAttribute="centerY" type="default" id="Ha2-ho-iXR"/>
-                                    <constraint firstItem="Z1F-nu-L3n" firstAttribute="centerX" secondItem="ZBA-Tb-o8s" secondAttribute="centerX" type="default" id="TMn-Ya-64I"/>
-                                </constraints>
-                            </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="VA1-Vo-ZW5">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="116" id="3zR-pF-qUc"/>
@@ -103,18 +84,22 @@
                                 </segments>
                                 <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="movideo-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="DBJ-mA-Ta2">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="UBC-PS-96B"/>
+                                    <constraint firstAttribute="width" constant="67" id="Zyy-lQ-o8m"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.97254908080000002" green="0.78431379800000001" blue="0.18823531269999999" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
                             <constraint firstItem="YyA-aO-iEL" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="7sY-Ye-9il"/>
-                            <constraint firstAttribute="bottom" secondItem="ZBA-Tb-o8s" secondAttribute="bottom" constant="514" id="AdB-Xj-Ih1"/>
                             <constraint firstItem="YyA-aO-iEL" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="JEL-NH-OBw"/>
-                            <constraint firstAttribute="trailing" secondItem="ZBA-Tb-o8s" secondAttribute="trailing" constant="4" id="P5L-gv-9wQ"/>
                             <constraint firstItem="YyA-aO-iEL" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="cHk-0P-sfB"/>
-                            <constraint firstItem="VA1-Vo-ZW5" firstAttribute="top" secondItem="3" secondAttribute="top" constant="3" id="dA6-un-FB5"/>
-                            <constraint firstItem="ZBA-Tb-o8s" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="234" id="eXS-2E-RVv"/>
-                            <constraint firstItem="VA1-Vo-ZW5" firstAttribute="centerX" secondItem="YyA-aO-iEL" secondAttribute="centerX" type="default" id="lGI-tV-axA"/>
-                            <constraint firstItem="ZBA-Tb-o8s" firstAttribute="top" secondItem="3" secondAttribute="top" constant="2" id="xmc-wJ-jVJ"/>
+                            <constraint firstItem="DBJ-mA-Ta2" firstAttribute="top" secondItem="3" secondAttribute="top" constant="1" id="lRZ-Wr-S7Y"/>
+                            <constraint firstItem="VA1-Vo-ZW5" firstAttribute="top" secondItem="3" secondAttribute="top" constant="3" id="mwI-8u-u7y"/>
+                            <constraint firstItem="DBJ-mA-Ta2" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="7" id="uDV-i1-tzh"/>
+                            <constraint firstItem="VA1-Vo-ZW5" firstAttribute="centerX" secondItem="YyA-aO-iEL" secondAttribute="centerX" type="default" id="z8S-ol-uLp"/>
                         </constraints>
                     </view>
                     <connections>
@@ -125,6 +110,9 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="movideo-logo.png" width="234" height="42"/>
+    </resources>
     <classes>
         <class className="MasterViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MasterViewController.h"/>

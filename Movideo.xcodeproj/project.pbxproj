@@ -11,6 +11,7 @@
 		BA79594317D9FAF30080C446 /* MediaCollectionViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA79594217D9FAF30080C446 /* MediaCollectionViewDelegate.m */; };
 		BA79594617D9FB7A0080C446 /* MediaCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA79594517D9FB7A0080C446 /* MediaCollectionViewCell.m */; };
 		BA79594917D9FE640080C446 /* MediaCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA79594817D9FE640080C446 /* MediaCollectionView.m */; };
+		BA79594C17DA08B10080C446 /* movideo-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = BA79594B17DA08B10080C446 /* movideo-logo.png */; };
 		BA7A3DCC17D8A5CC00E86E60 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7A3DCB17D8A5CC00E86E60 /* UIKit.framework */; };
 		BA7A3DCE17D8A5CC00E86E60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7A3DCD17D8A5CC00E86E60 /* Foundation.framework */; };
 		BA7A3DD017D8A5CC00E86E60 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7A3DCF17D8A5CC00E86E60 /* CoreGraphics.framework */; };
@@ -55,6 +56,7 @@
 		BA79594517D9FB7A0080C446 /* MediaCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaCollectionViewCell.m; sourceTree = "<group>"; };
 		BA79594717D9FE640080C446 /* MediaCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaCollectionView.h; sourceTree = "<group>"; };
 		BA79594817D9FE640080C446 /* MediaCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaCollectionView.m; sourceTree = "<group>"; };
+		BA79594B17DA08B10080C446 /* movideo-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "movideo-logo.png"; sourceTree = "<group>"; };
 		BA7A3DC817D8A5CC00E86E60 /* Movideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA7A3DCB17D8A5CC00E86E60 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BA7A3DCD17D8A5CC00E86E60 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -114,6 +116,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA79594A17DA08B10080C446 /* ImageResources */ = {
+			isa = PBXGroup;
+			children = (
+				BA79594B17DA08B10080C446 /* movideo-logo.png */,
+			);
+			path = ImageResources;
+			sourceTree = "<group>";
+		};
 		BA7A3DBF17D8A5CC00E86E60 = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +159,7 @@
 		BA7A3DD117D8A5CC00E86E60 /* Movideo */ = {
 			isa = PBXGroup;
 			children = (
+				BA79594A17DA08B10080C446 /* ImageResources */,
 				BAC5E2EC17D9EFC80054B409 /* MovideoAPI */,
 				BAC5E2DF17D9ED370054B409 /* Model */,
 				BA7A3DDA17D8A5CC00E86E60 /* AppDelegate.h */,
@@ -301,6 +312,7 @@
 				BA7A3DE017D8A5CC00E86E60 /* Default@2x.png in Resources */,
 				BA7A3DE217D8A5CC00E86E60 /* Default-568h@2x.png in Resources */,
 				BA7A3DE517D8A5CC00E86E60 /* MainStoryboard_iPhone.storyboard in Resources */,
+				BA79594C17DA08B10080C446 /* movideo-logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
