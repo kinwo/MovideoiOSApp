@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+#import "MediaCollectionView.h"
+
+@interface MasterViewController : UIViewController
+
+@property(nonatomic, strong) IBOutlet MediaCollectionView* collectionView;
 
 @end

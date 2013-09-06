@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B58E5456BF624DC9A6ED01FB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C659867A176F4A4E8C300B76 /* libPods.a */; };
+		BA79594317D9FAF30080C446 /* MediaCollectionViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA79594217D9FAF30080C446 /* MediaCollectionViewDelegate.m */; };
+		BA79594617D9FB7A0080C446 /* MediaCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA79594517D9FB7A0080C446 /* MediaCollectionViewCell.m */; };
+		BA79594917D9FE640080C446 /* MediaCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA79594817D9FE640080C446 /* MediaCollectionView.m */; };
 		BA7A3DCC17D8A5CC00E86E60 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7A3DCB17D8A5CC00E86E60 /* UIKit.framework */; };
 		BA7A3DCE17D8A5CC00E86E60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7A3DCD17D8A5CC00E86E60 /* Foundation.framework */; };
 		BA7A3DD017D8A5CC00E86E60 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7A3DCF17D8A5CC00E86E60 /* CoreGraphics.framework */; };
@@ -18,12 +21,20 @@
 		BA7A3DE017D8A5CC00E86E60 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA7A3DDF17D8A5CC00E86E60 /* Default@2x.png */; };
 		BA7A3DE217D8A5CC00E86E60 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA7A3DE117D8A5CC00E86E60 /* Default-568h@2x.png */; };
 		BA7A3DE517D8A5CC00E86E60 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA7A3DE317D8A5CC00E86E60 /* MainStoryboard_iPhone.storyboard */; };
-		BA7A3DEB17D8A5CC00E86E60 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7A3DEA17D8A5CC00E86E60 /* ViewController.m */; };
+		BA7A3DEB17D8A5CC00E86E60 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7A3DEA17D8A5CC00E86E60 /* MasterViewController.m */; };
 		BA7A3DF317D8A5CC00E86E60 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7A3DF217D8A5CC00E86E60 /* SenTestingKit.framework */; };
 		BA7A3DF417D8A5CC00E86E60 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7A3DCB17D8A5CC00E86E60 /* UIKit.framework */; };
 		BA7A3DF517D8A5CC00E86E60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7A3DCD17D8A5CC00E86E60 /* Foundation.framework */; };
 		BA7A3DFD17D8A5CC00E86E60 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA7A3DFB17D8A5CC00E86E60 /* InfoPlist.strings */; };
 		BA7A3E0017D8A5CC00E86E60 /* MovideoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7A3DFF17D8A5CC00E86E60 /* MovideoTests.m */; };
+		BAC5E2E217D9ED370054B409 /* MediaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC5E2E117D9ED370054B409 /* MediaModel.m */; };
+		BAC5E2E317D9ED370054B409 /* MediaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC5E2E117D9ED370054B409 /* MediaModel.m */; };
+		BAC5E2E617D9EEBA0054B409 /* MediaSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC5E2E517D9EEBA0054B409 /* MediaSearchResult.m */; };
+		BAC5E2E717D9EEBA0054B409 /* MediaSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC5E2E517D9EEBA0054B409 /* MediaSearchResult.m */; };
+		BAC5E2EA17D9EFBC0054B409 /* MovideoAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC5E2E917D9EFBC0054B409 /* MovideoAPIClient.m */; };
+		BAC5E2EB17D9EFBC0054B409 /* MovideoAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC5E2E917D9EFBC0054B409 /* MovideoAPIClient.m */; };
+		BAC5E2F117D9F2A10054B409 /* MovideoAPIService.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC5E2F017D9F2A10054B409 /* MovideoAPIService.m */; };
+		BAC5E2F217D9F2A10054B409 /* MovideoAPIService.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC5E2F017D9F2A10054B409 /* MovideoAPIService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +49,12 @@
 
 /* Begin PBXFileReference section */
 		B00E5A1FC3724BA7B86D3037 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		BA79594117D9FAF30080C446 /* MediaCollectionViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaCollectionViewDelegate.h; sourceTree = "<group>"; };
+		BA79594217D9FAF30080C446 /* MediaCollectionViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaCollectionViewDelegate.m; sourceTree = "<group>"; };
+		BA79594417D9FB7A0080C446 /* MediaCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaCollectionViewCell.h; sourceTree = "<group>"; };
+		BA79594517D9FB7A0080C446 /* MediaCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaCollectionViewCell.m; sourceTree = "<group>"; };
+		BA79594717D9FE640080C446 /* MediaCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaCollectionView.h; sourceTree = "<group>"; };
+		BA79594817D9FE640080C446 /* MediaCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaCollectionView.m; sourceTree = "<group>"; };
 		BA7A3DC817D8A5CC00E86E60 /* Movideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA7A3DCB17D8A5CC00E86E60 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BA7A3DCD17D8A5CC00E86E60 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -52,14 +69,23 @@
 		BA7A3DDF17D8A5CC00E86E60 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		BA7A3DE117D8A5CC00E86E60 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BA7A3DE417D8A5CC00E86E60 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		BA7A3DE917D8A5CC00E86E60 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BA7A3DEA17D8A5CC00E86E60 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BA7A3DE917D8A5CC00E86E60 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		BA7A3DEA17D8A5CC00E86E60 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		BA7A3DF117D8A5CC00E86E60 /* MovideoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovideoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA7A3DF217D8A5CC00E86E60 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		BA7A3DFA17D8A5CC00E86E60 /* MovideoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MovideoTests-Info.plist"; sourceTree = "<group>"; };
 		BA7A3DFC17D8A5CC00E86E60 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BA7A3DFE17D8A5CC00E86E60 /* MovideoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovideoTests.h; sourceTree = "<group>"; };
 		BA7A3DFF17D8A5CC00E86E60 /* MovideoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovideoTests.m; sourceTree = "<group>"; };
+		BAC5E2E017D9ED370054B409 /* MediaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaModel.h; sourceTree = "<group>"; };
+		BAC5E2E117D9ED370054B409 /* MediaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaModel.m; sourceTree = "<group>"; };
+		BAC5E2E417D9EEBA0054B409 /* MediaSearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaSearchResult.h; sourceTree = "<group>"; };
+		BAC5E2E517D9EEBA0054B409 /* MediaSearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaSearchResult.m; sourceTree = "<group>"; };
+		BAC5E2E817D9EFBC0054B409 /* MovideoAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MovideoAPIClient.h; path = MovideoAPI/MovideoAPIClient.h; sourceTree = "<group>"; };
+		BAC5E2E917D9EFBC0054B409 /* MovideoAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MovideoAPIClient.m; path = MovideoAPI/MovideoAPIClient.m; sourceTree = "<group>"; };
+		BAC5E2EE17D9F16D0054B409 /* MovideoConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovideoConstants.h; sourceTree = "<group>"; };
+		BAC5E2EF17D9F2A10054B409 /* MovideoAPIService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MovideoAPIService.h; path = MovideoAPI/MovideoAPIService.h; sourceTree = "<group>"; };
+		BAC5E2F017D9F2A10054B409 /* MovideoAPIService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MovideoAPIService.m; path = MovideoAPI/MovideoAPIService.m; sourceTree = "<group>"; };
 		C659867A176F4A4E8C300B76 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -123,11 +149,20 @@
 		BA7A3DD117D8A5CC00E86E60 /* Movideo */ = {
 			isa = PBXGroup;
 			children = (
+				BAC5E2EC17D9EFC80054B409 /* MovideoAPI */,
+				BAC5E2DF17D9ED370054B409 /* Model */,
 				BA7A3DDA17D8A5CC00E86E60 /* AppDelegate.h */,
 				BA7A3DDB17D8A5CC00E86E60 /* AppDelegate.m */,
+				BAC5E2EE17D9F16D0054B409 /* MovideoConstants.h */,
 				BA7A3DE317D8A5CC00E86E60 /* MainStoryboard_iPhone.storyboard */,
-				BA7A3DE917D8A5CC00E86E60 /* ViewController.h */,
-				BA7A3DEA17D8A5CC00E86E60 /* ViewController.m */,
+				BA79594717D9FE640080C446 /* MediaCollectionView.h */,
+				BA79594817D9FE640080C446 /* MediaCollectionView.m */,
+				BA79594417D9FB7A0080C446 /* MediaCollectionViewCell.h */,
+				BA79594517D9FB7A0080C446 /* MediaCollectionViewCell.m */,
+				BA79594117D9FAF30080C446 /* MediaCollectionViewDelegate.h */,
+				BA79594217D9FAF30080C446 /* MediaCollectionViewDelegate.m */,
+				BA7A3DE917D8A5CC00E86E60 /* MasterViewController.h */,
+				BA7A3DEA17D8A5CC00E86E60 /* MasterViewController.m */,
 				BA7A3DD217D8A5CC00E86E60 /* Supporting Files */,
 			);
 			path = Movideo;
@@ -164,6 +199,28 @@
 				BA7A3DFB17D8A5CC00E86E60 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BAC5E2DF17D9ED370054B409 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BAC5E2E017D9ED370054B409 /* MediaModel.h */,
+				BAC5E2E117D9ED370054B409 /* MediaModel.m */,
+				BAC5E2E417D9EEBA0054B409 /* MediaSearchResult.h */,
+				BAC5E2E517D9EEBA0054B409 /* MediaSearchResult.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BAC5E2EC17D9EFC80054B409 /* MovideoAPI */ = {
+			isa = PBXGroup;
+			children = (
+				BAC5E2E817D9EFBC0054B409 /* MovideoAPIClient.h */,
+				BAC5E2E917D9EFBC0054B409 /* MovideoAPIClient.m */,
+				BAC5E2EF17D9F2A10054B409 /* MovideoAPIService.h */,
+				BAC5E2F017D9F2A10054B409 /* MovideoAPIService.m */,
+			);
+			name = MovideoAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,7 +367,14 @@
 			files = (
 				BA7A3DD817D8A5CC00E86E60 /* main.m in Sources */,
 				BA7A3DDC17D8A5CC00E86E60 /* AppDelegate.m in Sources */,
-				BA7A3DEB17D8A5CC00E86E60 /* ViewController.m in Sources */,
+				BA7A3DEB17D8A5CC00E86E60 /* MasterViewController.m in Sources */,
+				BAC5E2E217D9ED370054B409 /* MediaModel.m in Sources */,
+				BAC5E2E617D9EEBA0054B409 /* MediaSearchResult.m in Sources */,
+				BAC5E2EA17D9EFBC0054B409 /* MovideoAPIClient.m in Sources */,
+				BAC5E2F117D9F2A10054B409 /* MovideoAPIService.m in Sources */,
+				BA79594317D9FAF30080C446 /* MediaCollectionViewDelegate.m in Sources */,
+				BA79594617D9FB7A0080C446 /* MediaCollectionViewCell.m in Sources */,
+				BA79594917D9FE640080C446 /* MediaCollectionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +383,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA7A3E0017D8A5CC00E86E60 /* MovideoTests.m in Sources */,
+				BAC5E2E317D9ED370054B409 /* MediaModel.m in Sources */,
+				BAC5E2E717D9EEBA0054B409 /* MediaSearchResult.m in Sources */,
+				BAC5E2EB17D9EFBC0054B409 /* MovideoAPIClient.m in Sources */,
+				BAC5E2F217D9F2A10054B409 /* MovideoAPIService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

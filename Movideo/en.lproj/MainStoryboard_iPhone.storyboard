@@ -4,15 +4,15 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Master View Controller-->
         <scene sceneID="5">
             <objects>
-                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="2" customClass="MasterViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YyA-aO-iEL">
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YyA-aO-iEL" customClass="MediaCollectionView">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="512" id="gDX-KG-VCl"/>
@@ -24,7 +24,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="BNC-RH-03R">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="mediaCollectionViewCell" id="BNC-RH-03R" customClass="MediaCollectionViewCell">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -39,33 +39,38 @@
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gEH-Bi-EpY">
                                                     <subviews>
-                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Title" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="7" preferredMaxLayoutWidth="154" translatesAutoresizingMaskIntoConstraints="NO" id="2ai-jE-6ii">
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="7" preferredMaxLayoutWidth="147" translatesAutoresizingMaskIntoConstraints="NO" id="2ai-jE-6ii">
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="154" id="Qea-MR-PSn"/>
                                                                 <constraint firstAttribute="height" constant="32" id="YeC-56-5CZ"/>
+                                                                <constraint firstAttribute="width" constant="147" id="czP-Jd-abI"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                            <color key="textColor" red="0.54509806632995605" green="0.66666668653488159" blue="0.29803922772407532" alpha="1" colorSpace="deviceRGB"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="0.52000000000000002" colorSpace="calibratedRGB"/>
                                                     <constraints>
-                                                        <constraint firstItem="2ai-jE-6ii" firstAttribute="top" secondItem="gEH-Bi-EpY" secondAttribute="top" constant="11" id="KH7-6h-QBo"/>
-                                                        <constraint firstItem="2ai-jE-6ii" firstAttribute="trailing" secondItem="gEH-Bi-EpY" secondAttribute="trailing" type="default" id="hyL-j1-TRx"/>
+                                                        <constraint firstItem="2ai-jE-6ii" firstAttribute="leading" secondItem="gEH-Bi-EpY" secondAttribute="leading" constant="-5" id="MOA-N5-cCS"/>
+                                                        <constraint firstItem="2ai-jE-6ii" firstAttribute="top" secondItem="gEH-Bi-EpY" secondAttribute="top" constant="5" id="pQO-f0-uaO"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="x2z-RU-dhg" firstAttribute="leading" secondItem="BNC-RH-03R" secondAttribute="leading" constant="15" id="2nw-w2-t6h"/>
-                                            <constraint firstAttribute="bottom" secondItem="gEH-Bi-EpY" secondAttribute="bottom" constant="47" id="SmE-tv-ZXT"/>
-                                            <constraint firstAttribute="trailing" secondItem="gEH-Bi-EpY" secondAttribute="trailing" constant="27" id="UkA-F8-ydR"/>
-                                            <constraint firstItem="gEH-Bi-EpY" firstAttribute="top" secondItem="x2z-RU-dhg" secondAttribute="top" type="default" id="aqg-Jf-OPq"/>
-                                            <constraint firstItem="x2z-RU-dhg" firstAttribute="centerY" secondItem="BNC-RH-03R" secondAttribute="centerY" type="default" id="gPP-kI-7z0"/>
-                                            <constraint firstItem="gEH-Bi-EpY" firstAttribute="leading" secondItem="BNC-RH-03R" secondAttribute="leading" constant="133" id="vUW-f8-oIl"/>
+                                            <constraint firstItem="gEH-Bi-EpY" firstAttribute="bottom" secondItem="x2z-RU-dhg" secondAttribute="bottom" type="default" id="3Wx-lH-fIG"/>
+                                            <constraint firstItem="gEH-Bi-EpY" firstAttribute="leading" secondItem="BNC-RH-03R" secondAttribute="leading" constant="132" id="86h-Kc-Qnh"/>
+                                            <constraint firstItem="gEH-Bi-EpY" firstAttribute="top" secondItem="BNC-RH-03R" secondAttribute="top" constant="59" id="DQO-gc-GFT"/>
+                                            <constraint firstItem="x2z-RU-dhg" firstAttribute="centerY" secondItem="BNC-RH-03R" secondAttribute="centerY" type="default" id="hNZ-Vi-kq8"/>
+                                            <constraint firstAttribute="trailing" secondItem="gEH-Bi-EpY" secondAttribute="trailing" constant="36" id="iaF-2k-Qqh"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="mediaImage" destination="x2z-RU-dhg" id="nTe-QJ-3hc"/>
+                                            <outlet property="mediaTitle" destination="2ai-jE-6ii" id="9Be-Qf-Xkm"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -112,12 +117,31 @@
                             <constraint firstItem="ZBA-Tb-o8s" firstAttribute="top" secondItem="3" secondAttribute="top" constant="2" id="xmc-wJ-jVJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="YyA-aO-iEL" id="UE7-TU-wcu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
     <classes>
+        <class className="MasterViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MasterViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="collectionView" candidateClass="MediaCollectionView"/>
+            </relationships>
+        </class>
+        <class className="MediaCollectionView" superclassName="UICollectionView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MediaCollectionView.h"/>
+        </class>
+        <class className="MediaCollectionViewCell" superclassName="UICollectionViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MediaCollectionViewCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="mediaImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="mediaTitle" candidateClass="UILabel"/>
+            </relationships>
+        </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
@@ -132,9 +156,6 @@
         </class>
         <class className="UICollectionViewLayout" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
