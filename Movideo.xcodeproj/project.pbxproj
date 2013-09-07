@@ -37,6 +37,7 @@
 		BAA50BE917DB02670070171B /* SearchBarDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA50BE817DB02670070171B /* SearchBarDelegate.m */; };
 		BAA50BEC17DB18BD0070171B /* 53-house.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA50BEA17DB18BD0070171B /* 53-house.png */; };
 		BAA50BED17DB18BD0070171B /* 53-house@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA50BEB17DB18BD0070171B /* 53-house@2x.png */; };
+		BAA50BF017DB3D470070171B /* SessionTokenXMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA50BEF17DB3D470070171B /* SessionTokenXMLParserDelegate.m */; };
 		BAC5E2E217D9ED370054B409 /* MediaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC5E2E117D9ED370054B409 /* MediaModel.m */; };
 		BAC5E2E317D9ED370054B409 /* MediaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC5E2E117D9ED370054B409 /* MediaModel.m */; };
 		BAC5E2E617D9EEBA0054B409 /* MediaSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC5E2E517D9EEBA0054B409 /* MediaSearchResult.m */; };
@@ -100,6 +101,8 @@
 		BAA50BE817DB02670070171B /* SearchBarDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBarDelegate.m; sourceTree = "<group>"; };
 		BAA50BEA17DB18BD0070171B /* 53-house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "53-house.png"; sourceTree = "<group>"; };
 		BAA50BEB17DB18BD0070171B /* 53-house@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "53-house@2x.png"; sourceTree = "<group>"; };
+		BAA50BEE17DB3D470070171B /* SessionTokenXMLParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SessionTokenXMLParserDelegate.h; path = MovideoAPI/SessionTokenXMLParserDelegate.h; sourceTree = "<group>"; };
+		BAA50BEF17DB3D470070171B /* SessionTokenXMLParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SessionTokenXMLParserDelegate.m; path = MovideoAPI/SessionTokenXMLParserDelegate.m; sourceTree = "<group>"; };
 		BAC5E2E017D9ED370054B409 /* MediaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaModel.h; sourceTree = "<group>"; };
 		BAC5E2E117D9ED370054B409 /* MediaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaModel.m; sourceTree = "<group>"; };
 		BAC5E2E417D9EEBA0054B409 /* MediaSearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaSearchResult.h; sourceTree = "<group>"; };
@@ -279,6 +282,8 @@
 				BAA50BD817DAB5400070171B /* MovideoAPISession.m */,
 				BAA50BDE17DAC37B0070171B /* MediaListXMLParserDelegate.h */,
 				BAA50BDF17DAC37B0070171B /* MediaListXMLParserDelegate.m */,
+				BAA50BEE17DB3D470070171B /* SessionTokenXMLParserDelegate.h */,
+				BAA50BEF17DB3D470070171B /* SessionTokenXMLParserDelegate.m */,
 			);
 			name = MovideoAPI;
 			sourceTree = "<group>";
@@ -443,6 +448,7 @@
 				BAA50BE017DAC37B0070171B /* MediaListXMLParserDelegate.m in Sources */,
 				BAA50BE517DAFF520070171B /* NSString+URLEncode.m in Sources */,
 				BAA50BE917DB02670070171B /* SearchBarDelegate.m in Sources */,
+				BAA50BF017DB3D470070171B /* SessionTokenXMLParserDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

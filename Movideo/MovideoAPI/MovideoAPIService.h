@@ -13,15 +13,18 @@
 
 typedef void (^SearchCompletionHandler)(MediaSearchResult* result, NSError* error) ;
 
+typedef void (^SessionTokenCompletionHandler)(NSString* token, NSError* error) ;
+
 
 @interface MovideoAPIService : NSObject {
 
 }
 
-
 - (void) findMostPlayed:(SearchCompletionHandler) handler;
 
 - (void) searchByKeywords:(NSString*) searchKeywords handler:(SearchCompletionHandler) handler;
+
+- (void) getNewToken:(SessionTokenCompletionHandler) handler;
 
 
 @end

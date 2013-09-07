@@ -48,6 +48,7 @@
 }
 
 - (IBAction) gotoHome {
+    [self.searchBar resignFirstResponder];
     [self loadMostPlayedList];
 }
 

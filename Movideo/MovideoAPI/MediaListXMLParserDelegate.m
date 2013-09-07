@@ -22,6 +22,19 @@
 
 @implementation MediaListXMLParserDelegate
 
+- (id) init {
+    self = [super init];
+    
+    if(!self) {
+        return nil;
+    }
+    
+    self.isParsingDefaultImage = NO;
+    self.isParsingTitle = NO;
+    
+    return self;
+}
+
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict {
     
     if([elementName isEqualToString:@"list"]) {
@@ -36,7 +49,7 @@
         self.isParsingTitle = YES;
     }
     
-    // debugging
+    // debug
     //NSLog(@"Processing Element: %@", elementName);
 }
 

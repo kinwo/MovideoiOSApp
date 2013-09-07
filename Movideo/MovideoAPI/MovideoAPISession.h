@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MovideoAPIService.h"
 
 @interface MovideoAPISession : NSObject
+
+- (id) initWithService:(MovideoAPIService*) service;
+
+- (void) acquireToken:(SessionTokenCompletionHandler) handler;
 
 @end
