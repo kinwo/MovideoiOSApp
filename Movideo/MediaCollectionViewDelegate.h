@@ -7,8 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MediaSearchResult.h"
 
 @interface MediaCollectionViewDelegate : NSObject<UICollectionViewDataSource, UICollectionViewDelegate>
+
+@property(nonatomic, strong) MediaSearchResult* result;
 
 - (id) initDelegate;
 

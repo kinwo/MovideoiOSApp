@@ -14,4 +14,6 @@
 
 @property(nonatomic, strong) IBOutlet MediaCollectionView* collectionView;
 
+- (IBAction) touchSegmentedControl:(id) sender;
+
 @end

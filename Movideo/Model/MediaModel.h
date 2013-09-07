@@ -12,8 +12,5 @@
 
 @property (nonatomic, strong) NSString* title;
 @property (nonatomic, strong) NSString* defaultImageURL;
-@property (nonatomic, strong) NSNumber* defaultImageWidth;
-@property (nonatomic, strong) NSNumber* defaultImageHeight;
-
 
 @end

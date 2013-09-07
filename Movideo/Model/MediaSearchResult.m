@@ -10,4 +10,29 @@
 
 @implementation MediaSearchResult
 
+
+- (id) init {
+    self = [super init];
+    
+    if (!self) {
+        return nil;
+    }
+    
+    self.mediaModelList = [[NSMutableArray alloc] init];
+    
+    return self;
+}
+
+- (void) addNewMedia:(MediaModel*) model {
+    [self.mediaModelList addObject:model];
+}
+
+- (MediaModel*) getMediaByIndex:(NSInteger) index {
+    return [self.mediaModelList objectAtIndex:(NSUInteger) index];
+}
+
+- (NSInteger) count {
+    return [self.mediaModelList count];
+}
+
 @end

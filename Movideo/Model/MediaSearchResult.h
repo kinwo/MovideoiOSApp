@@ -7,9 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MediaModel.h"
 
 @interface MediaSearchResult : NSObject
 
 @property(nonatomic, strong) NSMutableArray* mediaModelList;
+
+- (NSInteger) count;
+
+- (void) addNewMedia:(MediaModel*) model;
+
+- (MediaModel*) getMediaByIndex:(NSInteger) index;
 
 @end

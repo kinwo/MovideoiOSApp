@@ -28,6 +28,10 @@
 		BA7A3DF517D8A5CC00E86E60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7A3DCD17D8A5CC00E86E60 /* Foundation.framework */; };
 		BA7A3DFD17D8A5CC00E86E60 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA7A3DFB17D8A5CC00E86E60 /* InfoPlist.strings */; };
 		BA7A3E0017D8A5CC00E86E60 /* MovideoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7A3DFF17D8A5CC00E86E60 /* MovideoTests.m */; };
+		BAA50BD617DAB4810070171B /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA50BD517DAB4810070171B /* UIView+Toast.m */; };
+		BAA50BD917DAB5400070171B /* MovideoAPISession.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA50BD817DAB5400070171B /* MovideoAPISession.m */; };
+		BAA50BE017DAC37B0070171B /* MostPlayedXMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA50BDF17DAC37B0070171B /* MostPlayedXMLParserDelegate.m */; };
+		BAA50BE117DAC37B0070171B /* MostPlayedXMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA50BDF17DAC37B0070171B /* MostPlayedXMLParserDelegate.m */; };
 		BAC5E2E217D9ED370054B409 /* MediaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC5E2E117D9ED370054B409 /* MediaModel.m */; };
 		BAC5E2E317D9ED370054B409 /* MediaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC5E2E117D9ED370054B409 /* MediaModel.m */; };
 		BAC5E2E617D9EEBA0054B409 /* MediaSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC5E2E517D9EEBA0054B409 /* MediaSearchResult.m */; };
@@ -79,6 +83,12 @@
 		BA7A3DFC17D8A5CC00E86E60 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BA7A3DFE17D8A5CC00E86E60 /* MovideoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovideoTests.h; sourceTree = "<group>"; };
 		BA7A3DFF17D8A5CC00E86E60 /* MovideoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovideoTests.m; sourceTree = "<group>"; };
+		BAA50BD417DAB4810070171B /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		BAA50BD517DAB4810070171B /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		BAA50BD717DAB53F0070171B /* MovideoAPISession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MovideoAPISession.h; path = MovideoAPI/MovideoAPISession.h; sourceTree = "<group>"; };
+		BAA50BD817DAB5400070171B /* MovideoAPISession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MovideoAPISession.m; path = MovideoAPI/MovideoAPISession.m; sourceTree = "<group>"; };
+		BAA50BDE17DAC37B0070171B /* MostPlayedXMLParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MostPlayedXMLParserDelegate.h; path = MovideoAPI/MostPlayedXMLParserDelegate.h; sourceTree = "<group>"; };
+		BAA50BDF17DAC37B0070171B /* MostPlayedXMLParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MostPlayedXMLParserDelegate.m; path = MovideoAPI/MostPlayedXMLParserDelegate.m; sourceTree = "<group>"; };
 		BAC5E2E017D9ED370054B409 /* MediaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaModel.h; sourceTree = "<group>"; };
 		BAC5E2E117D9ED370054B409 /* MediaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaModel.m; sourceTree = "<group>"; };
 		BAC5E2E417D9EEBA0054B409 /* MediaSearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaSearchResult.h; sourceTree = "<group>"; };
@@ -159,6 +169,7 @@
 		BA7A3DD117D8A5CC00E86E60 /* Movideo */ = {
 			isa = PBXGroup;
 			children = (
+				BAA50BD317DAB4810070171B /* UIViewUtils */,
 				BA79594A17DA08B10080C446 /* ImageResources */,
 				BAC5E2EC17D9EFC80054B409 /* MovideoAPI */,
 				BAC5E2DF17D9ED370054B409 /* Model */,
@@ -212,6 +223,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BAA50BD317DAB4810070171B /* UIViewUtils */ = {
+			isa = PBXGroup;
+			children = (
+				BAA50BD417DAB4810070171B /* UIView+Toast.h */,
+				BAA50BD517DAB4810070171B /* UIView+Toast.m */,
+			);
+			path = UIViewUtils;
+			sourceTree = "<group>";
+		};
 		BAC5E2DF17D9ED370054B409 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +250,10 @@
 				BAC5E2E917D9EFBC0054B409 /* MovideoAPIClient.m */,
 				BAC5E2EF17D9F2A10054B409 /* MovideoAPIService.h */,
 				BAC5E2F017D9F2A10054B409 /* MovideoAPIService.m */,
+				BAA50BD717DAB53F0070171B /* MovideoAPISession.h */,
+				BAA50BD817DAB5400070171B /* MovideoAPISession.m */,
+				BAA50BDE17DAC37B0070171B /* MostPlayedXMLParserDelegate.h */,
+				BAA50BDF17DAC37B0070171B /* MostPlayedXMLParserDelegate.m */,
 			);
 			name = MovideoAPI;
 			sourceTree = "<group>";
@@ -387,6 +411,9 @@
 				BA79594317D9FAF30080C446 /* MediaCollectionViewDelegate.m in Sources */,
 				BA79594617D9FB7A0080C446 /* MediaCollectionViewCell.m in Sources */,
 				BA79594917D9FE640080C446 /* MediaCollectionView.m in Sources */,
+				BAA50BD617DAB4810070171B /* UIView+Toast.m in Sources */,
+				BAA50BD917DAB5400070171B /* MovideoAPISession.m in Sources */,
+				BAA50BE017DAC37B0070171B /* MostPlayedXMLParserDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +426,7 @@
 				BAC5E2E717D9EEBA0054B409 /* MediaSearchResult.m in Sources */,
 				BAC5E2EB17D9EFBC0054B409 /* MovideoAPIClient.m in Sources */,
 				BAC5E2F217D9F2A10054B409 /* MovideoAPIService.m in Sources */,
+				BAA50BE117DAC37B0070171B /* MostPlayedXMLParserDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

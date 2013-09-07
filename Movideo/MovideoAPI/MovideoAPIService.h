@@ -9,15 +9,19 @@
 #import <Foundation/Foundation.h>
 
 #import "MediaSearchResult.h"
+#import "MostPlayedXMLParserDelegate.h"
 
-typedef void (^SearchCompletionHandler)(MediaSearchResult* user, NSError* error) ;
+typedef void (^SearchCompletionHandler)(MediaSearchResult* result, NSError* error) ;
 
 
-@interface MovideoAPIService : NSObject
+@interface MovideoAPIService : NSObject {
 
-+ (void) findMostPlayed:(SearchCompletionHandler) handler;
+}
 
-+ (void) searchByKeywords:(SearchCompletionHandler) handler keywords:(NSString*) searchKeywords;
+
+- (void) findMostPlayed:(SearchCompletionHandler) handler;
+
+- (void) searchByKeywords:(SearchCompletionHandler) handler keywords:(NSString*) searchKeywords;
 
 
 @end
