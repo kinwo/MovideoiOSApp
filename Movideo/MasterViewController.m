@@ -20,6 +20,7 @@
 @property(nonatomic, strong) UIView *searchBarViewOverlay;
 @property(nonatomic, strong) SearchBarDelegate* searchBarDelegate;
 
+@property(nonatomic, strong) IBOutlet UICollectionView* collectionView;
 @property(nonatomic, strong) IBOutlet UISearchBar* searchBar;
 
 @end

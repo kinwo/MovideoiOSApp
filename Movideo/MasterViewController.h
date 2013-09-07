@@ -8,11 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "MediaCollectionView.h"
-
 @interface MasterViewController : UIViewController
-
-@property(nonatomic, strong) IBOutlet MediaCollectionView* collectionView;
 
 - (void) searchByKeywords:(NSString*) keywords;
 
