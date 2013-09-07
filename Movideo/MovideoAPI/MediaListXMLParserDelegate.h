@@ -1,5 +1,5 @@
 //
-//  MostPlayedXMLParserDelegate.h
+//  MediaListXMLParserDelegate.h
 //  Movideo
 //
 //  Created by HENRY CHAN on 7/09/13.
@@ -8,7 +8,7 @@
 
 #import "MediaSearchResult.h"
 
-@interface MostPlayedXMLParserDelegate : NSObject<NSXMLParserDelegate>
+@interface MediaListXMLParserDelegate : NSObject<NSXMLParserDelegate>
 
 @property(nonatomic, strong) MediaSearchResult* searchResult;
 

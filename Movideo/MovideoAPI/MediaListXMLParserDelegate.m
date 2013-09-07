@@ -1,16 +1,16 @@
 //
-//  MostPlayedXMLParserDelegate.m
+//  MediaListXMLParserDelegate.m
 //  Movideo
 //
 //  Created by HENRY CHAN on 7/09/13.
 //  Copyright (c) 2013 HENRY CHAN. All rights reserved.
 //
 
-#import "MostPlayedXMLParserDelegate.h"
+#import "MediaListXMLParserDelegate.h"
 #import "MediaSearchResult.h"
 #import "MediaModel.h"
 
-@interface MostPlayedXMLParserDelegate()
+@interface MediaListXMLParserDelegate()
 
 @property(nonatomic, strong) MediaModel* media;
 @property(nonatomic, strong) NSString* currentValue;
@@ -20,7 +20,7 @@
 
 @end
 
-@implementation MostPlayedXMLParserDelegate
+@implementation MediaListXMLParserDelegate
 
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict {
     
@@ -36,7 +36,8 @@
         self.isParsingTitle = YES;
     }
     
-    NSLog(@"Processing Element: %@", elementName);
+    // debugging
+    //NSLog(@"Processing Element: %@", elementName);
 }
 
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {

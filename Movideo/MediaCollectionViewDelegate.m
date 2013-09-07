@@ -27,7 +27,7 @@
     
     self.result = [[MediaSearchResult alloc] init];
     self.imageOperationQueue = [[NSOperationQueue alloc] init];
-    [self.imageOperationQueue setMaxConcurrentOperationCount:3];
+    [self.imageOperationQueue setMaxConcurrentOperationCount:5];
     
     return self;
 }

@@ -14,6 +14,6 @@
 
 @property(nonatomic, strong) IBOutlet MediaCollectionView* collectionView;
 
-- (IBAction) touchSegmentedControl:(id) sender;
+- (void) searchByKeywords:(NSString*) keywords;
 
 @end

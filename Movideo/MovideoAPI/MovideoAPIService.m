@@ -9,7 +9,7 @@
 #import "MovideoAPIService.h"
 #import "MovideoAPIClient.h"
 #import "MovideoConstants.h"
-
+#import "NSString+URLEncode.h"
 
 @interface MovideoAPIService() {
     
@@ -26,8 +26,8 @@
     
     [[MovideoAPIClient sharedClient] getPath:path parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSXMLParser* parser = (NSXMLParser*) responseObject;
-        MostPlayedXMLParserDelegate* mostPlayedDelegate = [[MostPlayedXMLParserDelegate alloc] init];
-        parser.delegate = mostPlayedDelegate;
+        MediaListXMLParserDelegate* delegate = [[MediaListXMLParserDelegate alloc] init];
+        parser.delegate = delegate;
         BOOL isSuccess = [parser parse];
         
         if (!isSuccess) {
@@ -37,7 +37,7 @@
             handler(nil, error);
         }
         
-        handler(mostPlayedDelegate.searchResult, nil);
+        handler(delegate.searchResult, nil);
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@", [error localizedDescription]);
@@ -46,11 +46,25 @@
      
 }
 
-- (void) searchByKeywords:(SearchCompletionHandler) handler keywords:(NSString*) searchKeywords {
-    NSString* path = [NSString stringWithFormat:@"/rest/media/search?keywords=%@&token=%@", searchKeywords, MOVIDEO_API_SESSION_TOKEN];
+- (void) searchByKeywords:(NSString*) searchKeywords handler:(SearchCompletionHandler) handler {
+    NSString* path = [NSString stringWithFormat:@"/rest/media/search?keywords=%@&token=%@", [searchKeywords urlencode], MOVIDEO_API_SESSION_TOKEN];
+    NSLog(@"%@", path);
 
     [[MovideoAPIClient sharedClient] getPath:path parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        handler(nil, nil);
+        NSXMLParser* parser = (NSXMLParser*) responseObject;
+        MediaListXMLParserDelegate* delegate = [[MediaListXMLParserDelegate alloc] init];
+        parser.delegate = delegate;
+        BOOL isSuccess = [parser parse];
+        
+        if (!isSuccess) {
+            NSMutableDictionary* details = [NSMutableDictionary dictionary];
+            [details setValue:@"Error caught when parsing XML response from search request." forKey:NSLocalizedDescriptionKey];
+            NSError * error = [NSError errorWithDomain:@"net.kinwo.movideo" code:200 userInfo:details];
+            handler(nil, error);
+        }
+        
+        handler(delegate.searchResult, nil);
+
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@", [error localizedDescription]);
         handler(nil, error);

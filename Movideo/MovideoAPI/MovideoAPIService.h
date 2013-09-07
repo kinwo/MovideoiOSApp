@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #import "MediaSearchResult.h"
-#import "MostPlayedXMLParserDelegate.h"
+#import "MediaListXMLParserDelegate.h"
 
 typedef void (^SearchCompletionHandler)(MediaSearchResult* result, NSError* error) ;
 
@@ -21,7 +21,7 @@ typedef void (^SearchCompletionHandler)(MediaSearchResult* result, NSError* erro
 
 - (void) findMostPlayed:(SearchCompletionHandler) handler;
 
-- (void) searchByKeywords:(SearchCompletionHandler) handler keywords:(NSString*) searchKeywords;
+- (void) searchByKeywords:(NSString*) searchKeywords handler:(SearchCompletionHandler) handler;
 
 
 @end

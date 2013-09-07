@@ -12,10 +12,10 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YyA-aO-iEL" customClass="MediaCollectionView">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YyA-aO-iEL" customClass="MediaCollectionView">
+                                <color key="backgroundColor" red="0.72156864404678345" green="0.88235300779342651" blue="0.9490196704864502" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="512" id="gDX-KG-VCl"/>
+                                    <constraint firstAttribute="height" constant="465" id="Qzp-JU-7Pp"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lA9-Sc-PNm">
                                     <size key="itemSize" width="320" height="177"/>
@@ -58,7 +58,7 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="gEH-Bi-EpY" secondAttribute="trailing" constant="17" id="8ca-UO-RMf"/>
                                             <constraint firstItem="gEH-Bi-EpY" firstAttribute="leading" secondItem="BNC-RH-03R" secondAttribute="leading" constant="12" id="MhC-kl-2FD"/>
@@ -74,39 +74,48 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="VA1-Vo-ZW5">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="116" id="3zR-pF-qUc"/>
-                                </constraints>
-                                <segments>
-                                    <segment title="Popular"/>
-                                    <segment title="Search"/>
-                                </segments>
-                                <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="touchSegmentedControl:" destination="2" eventType="valueChanged" id="Dqx-dg-bt6"/>
-                                </connections>
-                            </segmentedControl>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="movideo-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="DBJ-mA-Ta2">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="67" id="Zyy-lQ-o8m"/>
-                                    <constraint firstAttribute="height" constant="21" id="qsh-X8-pkY"/>
+                                    <constraint firstAttribute="width" constant="122" id="BJp-FG-VZG"/>
+                                    <constraint firstAttribute="height" constant="22" id="pv0-RW-pxj"/>
                                 </constraints>
                             </imageView>
+                            <searchBar contentMode="redraw" barStyle="blackTranslucent" placeholder="Search video" translatesAutoresizingMaskIntoConstraints="NO" id="flU-r3-4nl">
+                                <color key="tintColor" red="0.67058825492858887" green="0.82352948188781738" blue="0.36862745881080627" alpha="1" colorSpace="deviceRGB"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22X-MW-F85">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="53-house.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="gotoHome" destination="2" eventType="touchUpInside" id="ssS-ma-5n2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.97254908080000002" green="0.78431379800000001" blue="0.18823531269999999" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
+                            <constraint firstItem="22X-MW-F85" firstAttribute="top" secondItem="3" secondAttribute="top" constant="8" id="0TQ-Ht-6Fa"/>
+                            <constraint firstItem="flU-r3-4nl" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="6oH-cY-Z9k"/>
                             <constraint firstItem="YyA-aO-iEL" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="7sY-Ye-9il"/>
-                            <constraint firstItem="VA1-Vo-ZW5" firstAttribute="top" secondItem="DBJ-mA-Ta2" secondAttribute="top" type="default" id="A6X-0J-6RA"/>
+                            <constraint firstItem="DBJ-mA-Ta2" firstAttribute="top" secondItem="22X-MW-F85" secondAttribute="top" type="default" id="9hb-C9-6Pn"/>
+                            <constraint firstItem="flU-r3-4nl" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="BZk-zL-mEW"/>
                             <constraint firstItem="YyA-aO-iEL" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="JEL-NH-OBw"/>
+                            <constraint firstItem="flU-r3-4nl" firstAttribute="bottom" secondItem="YyA-aO-iEL" secondAttribute="top" type="default" id="ZQq-TJ-hHJ"/>
                             <constraint firstItem="YyA-aO-iEL" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="cHk-0P-sfB"/>
-                            <constraint firstItem="DBJ-mA-Ta2" firstAttribute="top" secondItem="3" secondAttribute="top" constant="3" id="ipV-SO-bq8"/>
-                            <constraint firstItem="DBJ-mA-Ta2" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="7" id="uDV-i1-tzh"/>
-                            <constraint firstItem="VA1-Vo-ZW5" firstAttribute="centerX" secondItem="YyA-aO-iEL" secondAttribute="centerX" type="default" id="z8S-ol-uLp"/>
+                            <constraint firstItem="DBJ-mA-Ta2" firstAttribute="centerX" secondItem="flU-r3-4nl" secondAttribute="centerX" type="default" id="d4K-Ao-nex"/>
+                            <constraint firstItem="22X-MW-F85" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="12" id="mcC-Nk-oIc"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="YyA-aO-iEL" id="UE7-TU-wcu"/>
+                        <outlet property="searchBar" destination="flU-r3-4nl" id="VPo-lP-sJ4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -114,14 +123,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="53-house.png" width="22" height="22"/>
         <image name="movideo-logo.png" width="234" height="42"/>
     </resources>
     <classes>
         <class className="MasterViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MasterViewController.h"/>
             <relationships>
-                <relationship kind="action" name="touchSegmentedControl:"/>
                 <relationship kind="outlet" name="collectionView" candidateClass="MediaCollectionView"/>
+                <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
             </relationships>
         </class>
         <class className="MediaCollectionView" superclassName="UICollectionView">

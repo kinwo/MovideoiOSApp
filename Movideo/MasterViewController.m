@@ -9,6 +9,7 @@
 #import "MasterViewController.h"
 #import "MediaCollectionViewDelegate.h"
 #import "MovideoAPIService.h"
+#import "SearchBarDelegate.h"
 
 #import "UIView+Toast.h"
 
@@ -16,14 +17,14 @@
 
 @property(nonatomic, strong) MediaCollectionViewDelegate* collectionViewDelegate;
 @property(nonatomic, strong) MovideoAPIService* movideoAPIService;
+@property(nonatomic, strong) UIView *searchBarViewOverlay;
+@property(nonatomic, strong) SearchBarDelegate* searchBarDelegate;
 
+@property(nonatomic, strong) IBOutlet UISearchBar* searchBar;
 
 @end
 
 @implementation MasterViewController
-
-static NSInteger POPULAR_LIST = 0;
-static NSInteger SEARCH_LIST = 1;
 
 - (void)viewDidLoad
 {
@@ -33,9 +34,21 @@ static NSInteger SEARCH_LIST = 1;
     self.collectionView.dataSource = self.collectionViewDelegate;
     self.collectionView.delegate = self.collectionViewDelegate;
     self.movideoAPIService = [[MovideoAPIService alloc] init];
+    self.searchBarDelegate = [[SearchBarDelegate alloc] initWithMasterViewController:self];
+    
+    [self initSearchBar];
     
     [self loadMostPlayedList];
     
+}
+
+- (void) initSearchBar {
+    // Search bar view overlay
+    self.searchBar.delegate = self.searchBarDelegate;
+}
+
+- (IBAction) gotoHome {
+    [self loadMostPlayedList];
 }
 
 - (void) loadMostPlayedList {
@@ -57,17 +70,33 @@ static NSInteger SEARCH_LIST = 1;
 }
 
 - (void) searchByKeywords:(NSString*) keywords {
+    // show spinner
+    [self clearResult];
+    [self.view makeToastActivity];
+    NSString* jsonKeywords = [NSString stringWithFormat:@"[\"%@\"]", keywords];
+    
+    // load data
+    [self.movideoAPIService searchByKeywords:jsonKeywords handler:^(MediaSearchResult* result, NSError* error) {
+        // stop spinner when successful or failure
+        [self.view hideToastActivity];
+        
+        // set to collectionViewDelegate when successful
+        self.collectionViewDelegate.result = result;
+        
+        // reload collection view when successful
+        [self.collectionView reloadData];
+    }];
+
     
 }
 
-- (IBAction) touchSegmentedControl:(id) sender {
-    UISegmentedControl *segmentedControl = (UISegmentedControl *)sender;
-    NSInteger selected = [segmentedControl selectedSegmentIndex];
-    if (selected == SEARCH_LIST) {
-        [self searchByKeywords:@""];
-    } else if (selected == POPULAR_LIST) {
-        [self loadMostPlayedList];
-    }
+- (void) clearResult {
+    // set to collectionViewDelegate when successful
+    self.collectionViewDelegate.result = [[MediaSearchResult alloc] init];
+    
+    // reload collection view when successful
+    [self.collectionView reloadData];
+
 }
 
 - (void)didReceiveMemoryWarning
