@@ -34,7 +34,7 @@
     NSString* token = [userDefaults stringForKey:USER_DEFAULTS_KEY_SESSION_TOKEN];
     NSDate* creationDateTime = [userDefaults objectForKey:USER_DEFAULTS_KEY_SESSION_TOKEN_CREATION_TIME];
     // add 90 mins
-    NSDate* expiredDateTime = [creationDateTime dateByAddingTimeInterval:5400];
+    NSDate* expiredDateTime = [creationDateTime dateByAddingTimeInterval:MOVIDEO_API_SESSION_RENEW_INTERVAL];
     NSDate* currentDateTime = [NSDate date];
     
     if (token && [currentDateTime compare:expiredDateTime] == NSOrderedAscending) {

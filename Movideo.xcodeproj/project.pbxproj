@@ -26,7 +26,7 @@
 		BA7A3DF417D8A5CC00E86E60 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7A3DCB17D8A5CC00E86E60 /* UIKit.framework */; };
 		BA7A3DF517D8A5CC00E86E60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7A3DCD17D8A5CC00E86E60 /* Foundation.framework */; };
 		BA7A3DFD17D8A5CC00E86E60 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA7A3DFB17D8A5CC00E86E60 /* InfoPlist.strings */; };
-		BA7A3E0017D8A5CC00E86E60 /* MovideoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7A3DFF17D8A5CC00E86E60 /* MovideoTests.m */; };
+		BA7A3E0017D8A5CC00E86E60 /* MovideoMediaListXMLParsingUnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7A3DFF17D8A5CC00E86E60 /* MovideoMediaListXMLParsingUnitTests.m */; };
 		BAA50BD617DAB4810070171B /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA50BD517DAB4810070171B /* UIView+Toast.m */; };
 		BAA50BD917DAB5400070171B /* MovideoAPISession.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA50BD817DAB5400070171B /* MovideoAPISession.m */; };
 		BAA50BE017DAC37B0070171B /* MediaListXMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA50BDF17DAC37B0070171B /* MediaListXMLParserDelegate.m */; };
@@ -42,11 +42,13 @@
 		BAC5E2E617D9EEBA0054B409 /* MediaSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC5E2E517D9EEBA0054B409 /* MediaSearchResult.m */; };
 		BAC5E2E717D9EEBA0054B409 /* MediaSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC5E2E517D9EEBA0054B409 /* MediaSearchResult.m */; };
 		BAC5E2EA17D9EFBC0054B409 /* MovideoAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC5E2E917D9EFBC0054B409 /* MovideoAPIClient.m */; };
-		BAC5E2EB17D9EFBC0054B409 /* MovideoAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC5E2E917D9EFBC0054B409 /* MovideoAPIClient.m */; };
 		BAC5E2F117D9F2A10054B409 /* MovideoAPIService.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC5E2F017D9F2A10054B409 /* MovideoAPIService.m */; };
-		BAC5E2F217D9F2A10054B409 /* MovideoAPIService.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC5E2F017D9F2A10054B409 /* MovideoAPIService.m */; };
 		BAF83B1517DC0C5E00FDB108 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BAF83B1417DC0C5E00FDB108 /* Icon@2x.png */; };
 		BAF83B1717DC0C6100FDB108 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BAF83B1617DC0C6100FDB108 /* Icon.png */; };
+		BAF83B2417DC18E900FDB108 /* MostPlayedList.xml in Resources */ = {isa = PBXBuildFile; fileRef = BAF83B2217DC18E900FDB108 /* MostPlayedList.xml */; };
+		BAF83B2617DC1B1000FDB108 /* SearchResult.xml in Resources */ = {isa = PBXBuildFile; fileRef = BAF83B2517DC1B1000FDB108 /* SearchResult.xml */; };
+		BAF83B2717DC1DC700FDB108 /* MostPlayedList.xml in Resources */ = {isa = PBXBuildFile; fileRef = BAF83B2217DC18E900FDB108 /* MostPlayedList.xml */; };
+		BAF83B2817DC1DCB00FDB108 /* SearchResult.xml in Resources */ = {isa = PBXBuildFile; fileRef = BAF83B2517DC1B1000FDB108 /* SearchResult.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,8 +88,8 @@
 		BA7A3DF217D8A5CC00E86E60 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		BA7A3DFA17D8A5CC00E86E60 /* MovideoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MovideoTests-Info.plist"; sourceTree = "<group>"; };
 		BA7A3DFC17D8A5CC00E86E60 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		BA7A3DFE17D8A5CC00E86E60 /* MovideoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovideoTests.h; sourceTree = "<group>"; };
-		BA7A3DFF17D8A5CC00E86E60 /* MovideoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovideoTests.m; sourceTree = "<group>"; };
+		BA7A3DFE17D8A5CC00E86E60 /* MovideoMediaListXMLParsingUnitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovideoMediaListXMLParsingUnitTests.h; sourceTree = "<group>"; };
+		BA7A3DFF17D8A5CC00E86E60 /* MovideoMediaListXMLParsingUnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovideoMediaListXMLParsingUnitTests.m; sourceTree = "<group>"; };
 		BAA50BD417DAB4810070171B /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
 		BAA50BD517DAB4810070171B /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
 		BAA50BD717DAB53F0070171B /* MovideoAPISession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MovideoAPISession.h; path = MovideoAPI/MovideoAPISession.h; sourceTree = "<group>"; };
@@ -113,6 +115,8 @@
 		BAC5E2F017D9F2A10054B409 /* MovideoAPIService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MovideoAPIService.m; path = MovideoAPI/MovideoAPIService.m; sourceTree = "<group>"; };
 		BAF83B1417DC0C5E00FDB108 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../../Icon@2x.png"; sourceTree = "<group>"; };
 		BAF83B1617DC0C6100FDB108 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../../Icon.png; sourceTree = "<group>"; };
+		BAF83B2217DC18E900FDB108 /* MostPlayedList.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = MostPlayedList.xml; sourceTree = "<group>"; };
+		BAF83B2517DC1B1000FDB108 /* SearchResult.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SearchResult.xml; sourceTree = "<group>"; };
 		C659867A176F4A4E8C300B76 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -158,6 +162,7 @@
 			children = (
 				BA7A3DD117D8A5CC00E86E60 /* Movideo */,
 				BA7A3DF817D8A5CC00E86E60 /* MovideoTests */,
+				BAF83B1E17DC16B200FDB108 /* XmlSamples */,
 				BA7A3DCA17D8A5CC00E86E60 /* Frameworks */,
 				BA7A3DC917D8A5CC00E86E60 /* Products */,
 				B00E5A1FC3724BA7B86D3037 /* Pods.xcconfig */,
@@ -227,8 +232,8 @@
 		BA7A3DF817D8A5CC00E86E60 /* MovideoTests */ = {
 			isa = PBXGroup;
 			children = (
-				BA7A3DFE17D8A5CC00E86E60 /* MovideoTests.h */,
-				BA7A3DFF17D8A5CC00E86E60 /* MovideoTests.m */,
+				BA7A3DFE17D8A5CC00E86E60 /* MovideoMediaListXMLParsingUnitTests.h */,
+				BA7A3DFF17D8A5CC00E86E60 /* MovideoMediaListXMLParsingUnitTests.m */,
 				BA7A3DF917D8A5CC00E86E60 /* Supporting Files */,
 			);
 			path = MovideoTests;
@@ -287,6 +292,15 @@
 				BAA50BEF17DB3D470070171B /* SessionTokenXMLParserDelegate.m */,
 			);
 			name = MovideoAPI;
+			sourceTree = "<group>";
+		};
+		BAF83B1E17DC16B200FDB108 /* XmlSamples */ = {
+			isa = PBXGroup;
+			children = (
+				BAF83B2517DC1B1000FDB108 /* SearchResult.xml */,
+				BAF83B2217DC18E900FDB108 /* MostPlayedList.xml */,
+			);
+			path = XmlSamples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,6 +386,8 @@
 				BAA50BED17DB18BD0070171B /* 53-house@2x.png in Resources */,
 				BAF83B1517DC0C5E00FDB108 /* Icon@2x.png in Resources */,
 				BAF83B1717DC0C6100FDB108 /* Icon.png in Resources */,
+				BAF83B2717DC1DC700FDB108 /* MostPlayedList.xml in Resources */,
+				BAF83B2817DC1DCB00FDB108 /* SearchResult.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +396,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA7A3DFD17D8A5CC00E86E60 /* InfoPlist.strings in Resources */,
+				BAF83B2417DC18E900FDB108 /* MostPlayedList.xml in Resources */,
+				BAF83B2617DC1B1000FDB108 /* SearchResult.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,11 +476,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA7A3E0017D8A5CC00E86E60 /* MovideoTests.m in Sources */,
+				BA7A3E0017D8A5CC00E86E60 /* MovideoMediaListXMLParsingUnitTests.m in Sources */,
 				BAC5E2E317D9ED370054B409 /* MediaModel.m in Sources */,
 				BAC5E2E717D9EEBA0054B409 /* MediaSearchResult.m in Sources */,
-				BAC5E2EB17D9EFBC0054B409 /* MovideoAPIClient.m in Sources */,
-				BAC5E2F217D9F2A10054B409 /* MovideoAPIService.m in Sources */,
 				BAA50BE117DAC37B0070171B /* MediaListXMLParserDelegate.m in Sources */,
 				BAA50BE617DAFF520070171B /* NSString+URLEncode.m in Sources */,
 			);
