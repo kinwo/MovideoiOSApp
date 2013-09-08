@@ -51,8 +51,6 @@
 		BAF83B2817DC1DCB00FDB108 /* SearchResult.xml in Resources */ = {isa = PBXBuildFile; fileRef = BAF83B2517DC1B1000FDB108 /* SearchResult.xml */; };
 		BAF83B2917DC24ED00FDB108 /* MovideoAPIService.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC5E2F017D9F2A10054B409 /* MovideoAPIService.m */; };
 		BAF83B2C17DC251D00FDB108 /* MovideoAPIServiceIntegrationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF83B2B17DC251D00FDB108 /* MovideoAPIServiceIntegrationTest.m */; };
-		BAF83B3017DC285A00FDB108 /* libPods-AFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF83B2F17DC285A00FDB108 /* libPods-AFNetworking.a */; };
-		BAF83B3217DC287300FDB108 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF83B3117DC287300FDB108 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,8 +122,6 @@
 		BAF83B2A17DC251D00FDB108 /* MovideoAPIServiceIntegrationTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovideoAPIServiceIntegrationTest.h; sourceTree = "<group>"; };
 		BAF83B2B17DC251D00FDB108 /* MovideoAPIServiceIntegrationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovideoAPIServiceIntegrationTest.m; sourceTree = "<group>"; };
 		BAF83B2D17DC267B00FDB108 /* AGWaitForAsyncTestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGWaitForAsyncTestHelper.h; sourceTree = "<group>"; };
-		BAF83B2F17DC285A00FDB108 /* libPods-AFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "libPods-AFNetworking.a"; path = "Pods/build/Release-iphoneos/libPods-AFNetworking.a"; sourceTree = "<group>"; };
-		BAF83B3117DC287300FDB108 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libPods.a; path = "Pods/build/Release-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		C659867A176F4A4E8C300B76 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -145,8 +141,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAF83B3217DC287300FDB108 /* libPods.a in Frameworks */,
-				BAF83B3017DC285A00FDB108 /* libPods-AFNetworking.a in Frameworks */,
 				BA7A3DF317D8A5CC00E86E60 /* SenTestingKit.framework in Frameworks */,
 				BA7A3DF417D8A5CC00E86E60 /* UIKit.framework in Frameworks */,
 				BA7A3DF517D8A5CC00E86E60 /* Foundation.framework in Frameworks */,
@@ -171,8 +165,6 @@
 		BA7A3DBF17D8A5CC00E86E60 = {
 			isa = PBXGroup;
 			children = (
-				BAF83B3117DC287300FDB108 /* libPods.a */,
-				BAF83B2F17DC285A00FDB108 /* libPods-AFNetworking.a */,
 				BA7A3DD117D8A5CC00E86E60 /* Movideo */,
 				BA7A3DF817D8A5CC00E86E60 /* MovideoTests */,
 				BAF83B1E17DC16B200FDB108 /* XmlSamples */,

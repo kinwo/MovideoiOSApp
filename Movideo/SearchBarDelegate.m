@@ -32,5 +32,9 @@
     [self.controller searchByKeywords:searchBar.text];
 }
 
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
+    [searchBar resignFirstResponder];
+}
+
 
 @end

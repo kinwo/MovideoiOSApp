@@ -81,7 +81,7 @@
                                     <constraint firstAttribute="height" constant="22" id="pv0-RW-pxj"/>
                                 </constraints>
                             </imageView>
-                            <searchBar contentMode="redraw" barStyle="blackTranslucent" placeholder="Search video" translatesAutoresizingMaskIntoConstraints="NO" id="flU-r3-4nl">
+                            <searchBar contentMode="redraw" barStyle="blackTranslucent" placeholder="Search video" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="flU-r3-4nl">
                                 <color key="tintColor" red="0.67058825492858887" green="0.82352948188781738" blue="0.36862745881080627" alpha="1" colorSpace="deviceRGB"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </searchBar>
